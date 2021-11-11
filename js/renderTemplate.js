@@ -1,4 +1,4 @@
-import { introductionData, skillsData,projectsData } from '../Data/data.js';
+import { introductionData, skillsData,projectsData,aboutMeData } from '../Data/data.js';
 
 console.log(skillsData)
 
@@ -43,7 +43,7 @@ function render() {
 
     const templateNav = function (data) {
         return `
-        <a class="btn" href="#skills">
+        <a class="btn" href="#${data.idSection}">
         ${data.optionNav}
     </a>
         `
@@ -54,6 +54,41 @@ function render() {
     $windowNav.innerHTML = introductionData.nav.map((data) => {
         return templateNav(data);
     }).join("");
+
+    //==================================================
+    // ABOUT ME
+    //==================================================
+
+    const templateAboutMe = function (data) {
+        return `
+        <div class="container">
+        <h2 class="section-title">About me</h2>
+
+        <div class="description">
+            ${data.description}
+        </div>
+        <!--<a href="assets/Resume.pdf" target="_blank"><button class="project-button gradient-btn fade" ><h4>My Resume</h4></button></a>-->
+        <section class="buttons">
+            <div class="container-btn">
+
+                <a href="#" class="btn-cv btn-1">
+                    <svg>
+                        <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                    </svg>
+                    View CV
+                </a>
+
+            </div>
+        </section>
+    
+    </div>
+        `
+    }
+
+    const $windowAboutMe = document.querySelector(".section-style")
+
+    $windowAboutMe.innerHTML = templateAboutMe(aboutMeData );
+  
 
 
 

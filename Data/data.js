@@ -11,7 +11,7 @@ export const introductionData = {
 
 
 
-    yourName: "Diego Arthur",
+    yourName: "Your name",
 
     socialNetwork: [{
         icon: "fa fa-envelope-o",
@@ -31,23 +31,33 @@ export const introductionData = {
 
     nav: [
 
+     
         {
-            optionNav: "Degree"
+            optionNav: "About me",
+            idSection:"about"
         },
         {
-            optionNav: "About me"
+            optionNav: "Skills",
+            idSection:"skills"
         },
         {
-            optionNav: "Skills"
-        },
-        {
-            optionNav: "Projects"
+            optionNav: "Projects",
+            idSection:"projects"
         }
 
 
     ]
 
 }
+
+
+//=========================================
+// ABOUT ME
+//=========================================
+ export const aboutMeData = {
+     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ratione harum sapiente ipsum maiores, blanditiis atque magni quam, quia quas hic deserunt rem aliquam. Error earum ab modi porro at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sunt veniam, eligendi modi similique tempore accusamus dolore, nobis non facilis quos veritatis officia eveniet molestias libero quisquam sed doloremque fugit!"
+ }
+
 
 
 
@@ -73,16 +83,7 @@ export const skillsData = [
         img: "assets/java.svg",
         nameSkill: "Java"
     }
-    ,
-    {
-        img: "assets/java.svg",
-        nameSkill: "Java"
-    }
-    ,
-    {
-        img: "assets/java.svg",
-        nameSkill: "Java"
-    }
+    
 ]
 
 //=========================================
