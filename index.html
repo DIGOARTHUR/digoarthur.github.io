@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Animation On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="style/top.css" type="text/css" rel="stylesheet">
+    <link href="style/effects.css" type="text/css" rel="stylesheet">
+    <link href="style/skills.css" type="text/css" rel="stylesheet">
+    <link href="style/about.css" type="text/css" rel="stylesheet">
+    <link href="style/footer.css" type="text/css" rel="stylesheet">
+    <link href="style/projects.css" type="text/css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- You can put any emoji here to use as favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍💻</text></svg>">
+
+
+        <script  type="module" src="js/renderTemplate.js"></script>
+       
+
+    <!-- Put here your site title -->
+    <title>Your Name</title>
+
+</head>
+
+<!-- Follow the HTML instructions to create your portfolio website -->
+
+<body>
+
+    <div id="top">
+
+
+        <div class="header">
+            <h1 class="header-apresentation">
+               <!-- Renderizado no arquivo ./js/renderTemplate > TEMPLATE YOURNAME <.header-apresentation> -->
+            </h1>
+       
+            <div class="header-icons">
+                
+
+             <!-- Renderizado no arquivo ./js/renderTemplate >  TEMPLATE ICONS SOCIAL NETWORKS  <.header-icons> -->
+
+            </div>
+
+            <p class="nav">
+               <!-- Renderizado no arquivo ./js/renderTemplate >   TEMPLATE OPTIONS NAV  <.nav> -->
+            </p>
+
+
+           
+        </div>
+
+        <a class="icon bounce gradient fade" id="down" href="#about" data-scroll>
+            <i class="fa fa-chevron-down"></i>
+        </a>
+
+    </div>
+
+
+
+    <section id="degree">
+        <h2 class="section-title">Degree</h2>
+    <div class="header-degree">
+        <div class="degree">
+        <img class="img-card" src="assets/icon_University.svg" alt="logo ">
+    <span>
+        <h4>Federal University of São João del-Rei </h4>
+        <p>Bachelor of Science and Technology</p>
+    </span>
+        </div>
+        <div class="degree">
+            <img class="img-card" src="assets/icon_University.svg" alt="logo ">
+        <span>
+            <h4>Federal University of São João del-Rei </h4>
+            <p>Bachelor of Science and Technology</p>
+        </span>
+            </div>
+              <div class="degree">
+            <img class="img-card" src="assets/icon_University.svg" alt="logo ">
+        <span>
+            <h4>Federal University of São João del-Rei </h4>
+            <p>Bachelor of Science and Technology</p>
+        </span>
+            </div>
+        </section>
+    <!-- About section -->
+    <span id="about">&nbsp</span>
+    
+    </div>
+    <section class="section-style" data-aos="fade-up">
+        
+        <div class="container">
+            
+            <h2 class="section-title">About me</h2>
+
+            <div class="description">
+                fgthfg
+            </div>
+            <!--<a href="assets/Resume.pdf" target="_blank"><button class="project-button gradient-btn fade" ><h4>My Resume</h4></button></a>-->
+            <section class="buttons">
+                <div class="container-btn">
+
+                    <a href="#" class="btn-cv btn-1">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        View CV
+                    </a>
+
+                </div>
+            </section>
+        </div>
+
+    </section>
+    <!-- End of about section -->
+
+    <!-- skills section -->
+    <section id="skills" class="skills" data-aos="zoom-in">
+        <div class="container">
+
+            <h2 class="section-title">Skills</h2>
+
+            <div class="cards-main">
+
+            <!-- Renderizado no arquivo ./js/renderTemplate > TEMPLATE SKILLS -->
+
+            </div>
+
+
+        </div>
+
+        </div>
+    </section>
+    <!-- End of skills section -->
+
+    <!-- Projects section -->
+    <section id="projects">
+        <div class="container">
+
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects-main">
+
+            
+            <!-- Renderizado no arquivo ./js/renderTemplate > TEMPLATE PROJECT -->
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End of projects section -->
+
+    <a title="Go to top" class="icon gradient fade" style="visibility: hidden;" id="top-button" onclick="topFunction()">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <footer class="footer container">
+
+        <hr>
+
+        <b>
+            <p>© 2020</p>
+            <p>
+                Build with <span class="love">❤</span>
+                by
+                <a class="fade" href="https://github.com/thalytabdn">Thalyta Barbosa</a>
+            </p>
+        </b>
+
+    </footer>
+
+    <!-- Animation On Scroll Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    
+    <script>
+      
+
+
+        var topButton = document.getElementById("top-button");
+
+        document.addEventListener("scroll", scrollFunction);
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.visibility = "visible";
+            } else {
+                topButton.style.visibility = "hidden";
+            }
+        }
+
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Animation On Scroll Library
+        AOS.init({
+            offset: 250,
+            duration: 1000,
+            once: true
+        });
+
+    </script>
+
+</body>
+
+</html>
