@@ -61,4 +61,10 @@ h1 {
         display: flex;
         flex-wrap: wrap;
   }
+  #astronautIMG{
+    
+    height:400px;
+    animation: go-back 1s infinite alternate;
+}
+}
 
