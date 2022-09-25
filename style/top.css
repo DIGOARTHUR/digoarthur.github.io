@@ -63,7 +63,7 @@ h1 {
   }
   #astronautIMG{
     
-    height:400px;
+    height:300px;
     animation: go-back 1s infinite alternate;
 }
 }
